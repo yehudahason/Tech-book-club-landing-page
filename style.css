@@ -23,6 +23,7 @@
     linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
     /* base gradient */
     linear-gradient(135deg, #f4ede7 0%, #f2e6de 40%, #e6eff2 75%, #ddecef 100%);
+  --bg-journey-size: 24px 24px, 24px 24px, 100% 100%;
 
   /* Font families */
   --font-mono: "Martian Mono", monospace;
@@ -59,5 +60,6 @@
 
 body {
   background: var(--bg-journey);
+  background-size: var(--bg-journey-size);
   min-height: 100vh;
 }
