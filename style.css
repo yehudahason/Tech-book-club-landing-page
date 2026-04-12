@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Martian+Mono:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  font-size: 16px;
+  /* Neutral */
+  --neutral-900: #062630;
+  --neutral-700: #385159;
+  --neutral-200: #e6e1df;
+  --neutral-100: #faf5f3;
+  --neutral-0: #ffffff;
+
+  /* Light Salmon */
+  --light-salmon-500: #fea36f;
+  --light-salmon-100: #ffe2d1;
+  --light-salmon-50: #fff5ef;
+
+  /* Gradients */
+  --gradient-text: linear-gradient(107deg, #ff9a60 -11.37%, #062630 100%);
+  --gradient-surface: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  --bg-journey:
+    /* grid lines */
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    /* base gradient */
+    linear-gradient(135deg, #f4ede7 0%, #f2e6de 40%, #e6eff2 75%, #ddecef 100%);
+
+  /* Font families */
+  --font-mono: "Martian Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  /* ========================
+     Presets (Desktop)
+  ======================== */
+  --text-1: 700 62px/120% var(--font-mono);
+  --text-2: 600 50px/130% var(--font-mono);
+  --text-3: 600 34px/130% var(--font-mono);
+
+  --text-4-regular: 400 24px/110% var(--font-mono);
+  --text-4-semibold: 600 24px/110% var(--font-mono);
+
+  --text-5-regular: 400 20px/140% var(--font-sans);
+  --text-5-semibold: 600 20px/140% var(--font-sans);
+
+  --text-6: 600 18px/130% var(--font-mono);
+
+  /* Letter spacing (kept separate for flexibility) */
+  --ls-tight-lg: -2px;
+  --ls-tight-md: -1px;
+  --ls-tight-sm: -0.5px;
+
+  /* ========================
+     Presets (Mobile)
+  ======================== */
+  --text-1-mobile: 700 38px/120% var(--font-mono);
+  --text-2-mobile: 600 34px/130% var(--font-mono);
+  --text-3-mobile: 600 24px/110% var(--font-mono);
+  --text-6-mobile: 600 16px/130% var(--font-mono);
+}
+
+body {
+  background: var(--bg-journey);
+  min-height: 100vh;
+}
