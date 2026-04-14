@@ -170,6 +170,7 @@ h1 img {
 }
 .img-con img {
   height: 100%;
+  width: 100%;
   border-radius: 16px;
 }
 .text2 {
@@ -204,6 +205,7 @@ h1 img {
   margin: 0 auto;
   display: flex;
   gap: 80px;
+  justify-content: center;
 }
 .text3 {
   padding: 44px 0;
@@ -238,4 +240,64 @@ h3 {
 h3 img.circle {
   position: absolute;
   right: 244px;
+}
+
+.section3 .img-con {
+  width: 520px;
+}
+.section4 {
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container4 {
+  background: var(--bg-journey);
+  background-size: var(--bg-journey-size);
+  width: 1170px;
+  height: 454px;
+  border-radius: 5px;
+  padding: 80px 60px 70px;
+}
+.container4 h3 {
+  font: var(--text-2);
+  color: var(--neutral-900);
+  width: 530px;
+  margin: 0 auto;
+  text-align: center;
+}
+.number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.number-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 256px;
+}
+.number-item span {
+  font: var(--text-6);
+  color: var(--neutral-900);
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--neutral-900);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-item img {
+  position: absolute;
+  right: 0;
+  width: 67px;
+}
+.number-item p {
+  font: var(--text-6);
+  color: var(--neutral-900);
 }
