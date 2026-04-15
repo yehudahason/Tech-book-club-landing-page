@@ -27,9 +27,17 @@
   --bg2: linear-gradient(
     135deg,
     #f4ede7 0%,
-    #f2e6de 40%,
+    #fcf7f3 40%,
     #e8eef0 75%,
     #e6ecef 100%
+  );
+
+  --slomon-bg: linear-gradient(
+    to right,
+    var(--light-salmon-100) 0%,
+    var(--light-salmon-100) 40%,
+    var(--light-salmon-50) 90%,
+    var(--light-salmon-50) 100%
   );
   /* Font families */
   --font-mono: "Martian Mono", monospace;
@@ -130,15 +138,22 @@ h1 img {
 .review-btn {
   width: 380px;
   height: 64px;
-  padding: 20px 0;
+  padding: 15px 12px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   justify-content: center;
   border-radius: 8px;
   border: 2px solid var(--neutral-900);
   font: var(--text-6);
   color: var(--neutral-900);
+  text-transform: uppercase;
+}
+a:hover {
+  cursor: pointer;
+}
+a:hover .review-btn {
+  background: var(--slomon-bg);
 }
 .bottom1 {
   display: flex;
@@ -175,6 +190,14 @@ h1 img {
 .img-con {
   height: 520px;
   width: 560px;
+  position: relative;
+}
+.img-con .tech-logos {
+  position: absolute;
+  left: -80px;
+  bottom: 20px;
+  width: 120px;
+  height: auto;
 }
 .img-con img {
   height: 100%;
@@ -387,6 +410,9 @@ h3 img.circle {
   letter-spacing: var(--ls-tight-sm);
   color: var(--neutral-700);
 }
+a {
+  text-decoration: none;
+}
 .subscription-item button {
   margin-top: 10px;
   width: 100%;
@@ -399,6 +425,9 @@ h3 img.circle {
   cursor: pointer;
 }
 
+.subscription-item button:hover {
+  background: var(--slomon-bg);
+}
 .subscription-item .devider {
   margin-top: -5px;
   width: 100%;
@@ -441,7 +470,7 @@ h3 img.circle {
   align-items: center;
   background-color: var(--neutral-900);
   border-radius: 8px 8px 0 0;
-  padding: 80px;
+  padding: 80px 0 20px;
 }
 .footer-con {
   display: flex;
