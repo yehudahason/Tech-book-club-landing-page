@@ -303,7 +303,7 @@ h3 img.circle {
 }
 
 .section5 {
-  /* padding: 120px 0; */
+  padding: 0 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,6 +338,7 @@ h3 img.circle {
   border-radius: 8px;
 }
 .subscription-item p {
+  margin-top: -5px;
   font: var(--text-5-regular);
   color: var(--neutral-700);
   display: flex;
@@ -357,6 +358,7 @@ h3 img.circle {
   color: var(--neutral-700);
 }
 .subscription-item button {
+  margin-top: 10px;
   width: 100%;
   height: 63px;
   background: var(--light-salmon-50);
@@ -364,9 +366,16 @@ h3 img.circle {
   border-radius: 6px;
   font: var(--text-6);
   color: var(--neutral-900);
+  cursor: pointer;
 }
 .subscription-item:hover {
   transform: scale(1.05);
   background: var(--bg-journey);
   background-size: 100% 100%;
+}
+.subscription-item .devider {
+  margin-top: -5px;
+  width: 100%;
+  height: 1px;
+  background: var(--neutral-200);
 }
