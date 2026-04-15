@@ -301,3 +301,72 @@ h3 img.circle {
   font: var(--text-6);
   color: var(--neutral-900);
 }
+
+.section5 {
+  /* padding: 120px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  width: 970px;
+  flex-direction: column;
+}
+.container5 h3 {
+  font: var(--text-2);
+  color: var(--neutral-900);
+}
+.subscription-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.subscription-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  width: 280px;
+  height: 358px;
+  border: 1px solid var(--neutral-200);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.subscription-item p {
+  font: var(--text-5-regular);
+  color: var(--neutral-700);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.subscription-item h4 {
+  font: var(--text-4-regular);
+  color: var(--neutral-900);
+}
+.subscription-item h5 {
+  font: var(--text-3);
+  color: var(--neutral-900);
+}
+.subscription-item h5 span {
+  font: var(--text-5-regular);
+  color: var(--neutral-700);
+}
+.subscription-item button {
+  width: 100%;
+  height: 63px;
+  background: var(--light-salmon-50);
+  border: 1px solid var(--neutral-900);
+  border-radius: 6px;
+  font: var(--text-6);
+  color: var(--neutral-900);
+}
+.subscription-item:hover {
+  transform: scale(1.05);
+  background: var(--bg-journey);
+  background-size: 100% 100%;
+}
