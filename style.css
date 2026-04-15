@@ -148,6 +148,7 @@ h1 img {
   font: var(--text-6);
   color: var(--neutral-900);
   text-transform: uppercase;
+  cursor: pointer;
 }
 a:hover {
   cursor: pointer;
@@ -465,12 +466,13 @@ a {
   color: var(--neutral-700);
 }
 .footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--neutral-900);
   border-radius: 8px 8px 0 0;
-  padding: 80px 0 20px;
+  padding: 80px 0 46px;
 }
 .footer-con {
   display: flex;
@@ -527,4 +529,60 @@ a {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+
+  color: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 5;
+}
+
+/* Links */
+.attribution a {
+  margin: 0 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(230, 82, 28);
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.attribution a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Separator dot */
+.separator {
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+/* Year flicker effect */
+.year {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  display: inline-block;
+  animation: flicker 1s step-end infinite;
+  color: rgb(219, 89, 42);
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
