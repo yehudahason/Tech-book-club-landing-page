@@ -305,6 +305,7 @@ h3 span {
 h3 img.circle {
   position: absolute;
   inset: 0;
+  left: -1rem;
 }
 
 .section3 .img-con {
