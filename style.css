@@ -160,7 +160,7 @@ a {
 .review-btn {
   width: min(380px, 96%);
   height: 64px;
-  padding: 15px 12px;
+  padding: 5px;
   display: flex;
   align-items: center;
   gap: 12px;
