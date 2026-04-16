@@ -665,7 +665,7 @@ a {
   .section5,
   .section6 {
     width: 100%;
-    padding: 32px;
+    padding: 32px 0;
   }
   .section1 .head-logo {
     width: 100%;
