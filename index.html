@@ -16,7 +16,10 @@
   <body>
     <main>
       <section class="section1">
-        <h1><img src="./img/logo.svg" alt="logo" /></h1>
+        <div class="head-logo">
+          <img src="./img/logo.svg" alt="logo" class="logo" />
+        </div>
+
         <div class="text-con1">
           <div class="text1">
             <h3>Join the ultimate tech book club</h3>
@@ -27,6 +30,7 @@
             </p>
 
             <button
+              type="button"
               class="review-btn"
               onclick="window.location = '#membership'"
             >
@@ -158,7 +162,7 @@
               <p>
                 <img src="./img/icon-check.svg" alt="check" /> Online forums
               </p>
-              <button class="subscribe-btn">Subscribe now</button>
+              <button class="subscribe-btn" type="button">Subscribe now</button>
             </div>
             <div class="subscription-item">
               <h4>Pro</h4>
@@ -171,7 +175,7 @@
               <p>
                 <img src="./img/icon-check.svg" alt="check" /> Virtual meetups
               </p>
-              <button class="subscribe-btn">Subscribe now</button>
+              <button type="button" class="subscribe-btn">Subscribe now</button>
             </div>
             <div class="subscription-item last">
               <h4>Enterprise</h4>
@@ -182,7 +186,7 @@
               <p>
                 <img src="./img/icon-check.svg" alt="check" /> Private sessions
               </p>
-              <button class="subscribe-btn">Talk to us</button>
+              <button class="subscribe-btn" type="button">Talk to us</button>
             </div>
           </div>
         </div>
@@ -210,7 +214,7 @@
       <div class="footer-con">
         <h3>Ready to debug your reading list?</h3>
 
-        <button onclick="window.location = '#membership'">
+        <button onclick="window.location = '#membership'" type="button">
           Review membership options
           <img src="./img/icon-arrow-up.svg" alt="arrow up" />
         </button>

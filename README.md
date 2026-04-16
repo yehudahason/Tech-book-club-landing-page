@@ -6,7 +6,7 @@
 
 This is a solution to the [Tech book club landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tech-book-club-landing-page-fZQidjHU73).
 
-[Frontend Mentor](https://www.frontendmentor.io)Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+[Frontend Mentor](https://www.frontendmentor.io) . Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### Links
 

@@ -107,13 +107,13 @@ main {
   gap: 80px;
   max-width: 1440px;
 }
-.section1 h1 {
+.section1 .head-logo {
   text-align: left;
   width: 1174px;
   height: 36px;
   margin: 0 auto;
 }
-h1 img {
+.section1 .logo {
   height: 36px;
 }
 .text-con1 {
@@ -659,7 +659,7 @@ a {
     width: 100%;
     padding: 32px;
   }
-  .section1 h1 {
+  .section1 .head-logo {
     width: 100%;
     /* text-align: center; */
   }
