@@ -703,6 +703,12 @@ a {
     width: min(100%, 560px);
   }
 }
+@media (max-width: 640px) {
+  .subscription-con {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 @media (max-width: 400px) {
   .section1 {
     height: 1100px;
