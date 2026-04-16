@@ -31,7 +31,10 @@
     #e8eef0 75%,
     #e6ecef 100%
   );
-
+  --btn-bg: linear-gradient(135deg, #0f2a2e, #1f4b52);
+  --btn-hover-bg: linear-gradient(135deg, #1c5c63, #2f7e87);
+  --container-bg: radial-gradient(circle at center, #0e2f34 0%, #071c20 100%);
+  --grid-color: rgba(255, 255, 255, 0.05);
   --slomon-bg: linear-gradient(
     to right,
     var(--light-salmon-100) 0%,
@@ -170,8 +173,13 @@ h1 img {
 a:hover {
   cursor: pointer;
 }
-a:hover .review-btn {
+.review-btn:hover {
   background: var(--slomon-bg);
+}
+button:focus {
+  border: 1px solid var(--neutral-700);
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 1px;
 }
 .bottom1 {
   display: flex;
@@ -437,6 +445,7 @@ h3 img.circle {
 }
 a {
   text-decoration: none;
+  width: 100%;
 }
 .subscription-item button {
   margin-top: 10px;
@@ -494,9 +503,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--neutral-900);
+  background: var(--container-bg);
+  position: relative;
   border-radius: 8px 8px 0 0;
   padding: 80px 0 76px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
 }
 .footer-con {
   display: flex;
@@ -516,7 +536,7 @@ a {
 .footer button {
   font: var(--text-6);
   color: var(--neutral-0);
-  background: transparent;
+  background: var(--btn-bg);
   border: 2px solid var(--neutral-0);
   display: flex;
   justify-content: center;
@@ -527,6 +547,14 @@ a {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+}
+.footer button:hover {
+  background: var(--btn-hover-bg);
+}
+.footer button:focus {
+  border: 1px solid var(--neutral-0);
+  outline: 2px solid var(--neutral-0);
+  outline-offset: 2px;
 }
 .bottom1 .white {
   color: var(--neutral-0);
@@ -717,10 +745,8 @@ a {
     align-items: center;
   }
 }
-@media (max-width: 400px) {
-  .section1 {
-    height: 1100px;
-  }
+
+@media (max-width: 530px) {
   :root {
     /* Mobile presets */
     --text-1: var(--text-1-mobile);
@@ -728,6 +754,12 @@ a {
     --text-3: var(--text-3-mobile);
     --text-6: var(--text-6-mobile);
   }
+}
+@media (max-width: 400px) {
+  .section1 {
+    height: 1100px;
+  }
+
   h3 img.circle {
     height: 50px;
     left: -10px;
