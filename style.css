@@ -260,7 +260,6 @@ button:focus {
 }
 
 .section3 {
-  padding: 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +304,7 @@ h3 span {
 }
 h3 img.circle {
   position: absolute;
-  left: -20px;
+  inset: 0;
 }
 
 .section3 .img-con {
@@ -760,8 +759,6 @@ a {
   }
   h3 img.circle {
     height: 50px;
-    left: -10px;
-    top: -4px;
   }
 }
 @media (max-width: 27.5rem) {
