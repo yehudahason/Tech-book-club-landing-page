@@ -156,7 +156,7 @@ h1 img {
   border-radius: 10px;
 }
 .review-btn {
-  width: min(380px, 90%);
+  width: min(380px, 96%);
   height: 64px;
   padding: 15px 12px;
   display: flex;
@@ -755,9 +755,15 @@ a {
     --text-6: var(--text-6-mobile);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .section1 {
     height: 1100px;
+  }
+  .review-btn {
+    padding: 2px;
+    gap: 3px;
+    font-size: 12px;
+    height: 44px;
   }
 
   h3 img.circle {
