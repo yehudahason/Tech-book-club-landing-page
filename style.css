@@ -88,7 +88,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   max-width: 1440px;
 }
 
@@ -319,7 +319,9 @@ h3 img.circle {
   color: var(--neutral-900);
   width: min(530px, 100%);
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 .number-container {
   display: flex;
@@ -385,9 +387,7 @@ h3 img.circle {
   justify-content: center;
   gap: 24px;
 }
-.subscription-con .last {
-  justify-self: start;
-}
+
 .subscription-item {
   display: flex;
   flex-direction: column;
@@ -651,11 +651,13 @@ a {
     align-items: center;
     justify-content: center;
   }
-
+  .container2 {
+    flex-direction: column-reverse;
+  }
   .container4 {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 30px 20px;
   }
   .container5 h3 {
     text-align: center;
@@ -682,7 +684,6 @@ a {
   .container6 h3 {
     width: 100%;
     padding: 10px;
-    text-align: left;
   }
   .footer {
     width: 100%;
@@ -703,10 +704,17 @@ a {
     width: min(100%, 560px);
   }
 }
-@media (max-width: 640px) {
+
+@media (max-width: 768px) {
+  .container6 h3 {
+    text-align: left;
+  }
+}
+@media (max-width: 646px) {
   .subscription-con {
     grid-template-columns: 1fr;
     justify-items: center;
+    align-items: center;
   }
 }
 @media (max-width: 400px) {
