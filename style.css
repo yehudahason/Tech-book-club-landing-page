@@ -555,6 +555,7 @@ a {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .footer .review-btn2:hover {
   background: var(--btn-hover-bg);
