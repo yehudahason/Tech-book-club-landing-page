@@ -239,7 +239,7 @@ button:focus {
 }
 .text2 {
   padding: 44px 0;
-  width: min(530px, 100%);
+  width: min(530px, 90%);
 }
 
 .text2 h3 {
@@ -554,7 +554,6 @@ a {
   gap: 8px;
   width: min(380px, 90%);
   height: 64px;
-  padding: 5px;
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
