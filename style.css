@@ -303,11 +303,13 @@ button:focus {
 }
 h3 span {
   position: relative;
+  display: inline-block;
 }
 h3 img.circle {
   position: absolute;
-  inset: 0;
-  left: -1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section3 .img-con {
