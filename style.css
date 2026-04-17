@@ -313,7 +313,7 @@ h3 img.circle {
 }
 
 .section3 .img-con {
-  width: min(520px, 100%);
+  width: min(520px, 90%);
 }
 .section4 {
   padding: 120px 0;
@@ -737,7 +737,7 @@ a {
     padding: 10px 0;
   }
   .text3 {
-    width: min(100%, 560px);
+    width: min(90%, 560px);
   }
   .text3 p {
     width: min(100%, 560px);
