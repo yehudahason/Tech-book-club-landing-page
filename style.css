@@ -162,7 +162,7 @@ a {
 .review-btn {
   width: min(380px, 96%);
   height: 64px;
-  padding: 5px;
+  /* padding: 5px; */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -773,12 +773,14 @@ a {
     height: 1100px;
   }
   .review-btn {
-    padding: 2px;
-    gap: 3px;
+    padding: 0px;
+    gap: 1px;
     font-size: 0.875rem;
     height: 44px;
   }
-
+  .footer .review-btn2 {
+    font-size: 0.9rem;
+  }
   .number-item {
     gap: 10px;
   }
