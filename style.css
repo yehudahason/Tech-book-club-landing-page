@@ -120,6 +120,7 @@ a {
   max-width: 1440px;
   height: auto;
   min-height: clamp(700px, 85vh, 820px);
+  padding: 66px 0;
 }
 .section1 .head-logo {
   text-align: left;
@@ -667,7 +668,7 @@ button:focus {
 
 @media (max-width: 73.75rem) {
   .section1 {
-    padding: 32px;
+    padding: 66px 32px;
     width: 100%;
     height: auto;
     min-height: clamp(900px, 120vh, 1360px);
