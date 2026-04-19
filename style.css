@@ -479,6 +479,7 @@ button:focus {
   cursor: pointer;
   height: auto;
   min-height: clamp(48px, 6vw, 63px);
+  text-transform: uppercase;
 }
 
 .subscription-item button:hover {
