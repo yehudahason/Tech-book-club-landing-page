@@ -664,6 +664,9 @@ button:focus {
   }
 }
 
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
 @media (max-width: 73.75rem) {
   .section1 {
     padding: 32px;
@@ -671,11 +674,11 @@ button:focus {
     height: auto;
     min-height: clamp(900px, 120vh, 1360px);
   }
-  .img-con .tech-logos {
-    right: 20px;
-    width: 80px;
-    left: auto;
+
+  .section1 .head-logo {
+    width: 100%;
   }
+
   .section2,
   .section3,
   .section4,
@@ -684,128 +687,120 @@ button:focus {
     width: 100%;
     padding: 32px 0;
   }
-  .section1 .head-logo {
-    width: 100%;
-    /* text-align: center; */
-  }
-  .text-con1 {
-    height: auto;
-  }
-  .number-container,
+
   .text-con1,
   .container2,
   .container3,
   .container5,
-  .container6 {
+  .container6,
+  .number-container {
     flex-direction: column;
-    min-height: auto;
-    gap: 32px;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    gap: 32px;
+    width: 100%;
   }
+
   .container2 {
     flex-direction: column-reverse;
   }
+
+  .text-con1 {
+    min-height: auto;
+  }
+
   .container4 {
     width: 100%;
-    height: auto;
     padding: 30px 20px;
   }
-  .container5 h3 {
-    text-align: center;
-  }
+
   .number-item {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
   }
+
   .number-item img {
     display: none;
   }
 
   .img-con {
     width: min(90%, 560px);
-    /* height: min(auto, auto); */
   }
+
+  .img-con .tech-logos {
+    right: 20px;
+    left: auto;
+    width: 80px;
+  }
+
   .text1 {
     width: 100%;
   }
-  .container4 h3 {
-    width: 100%;
-  }
-  .container6 h3 {
-    width: 95%;
-    padding: 10px;
-  }
-  .footer {
-    width: 100%;
-  }
-  .devider {
-    width: 100%;
-  }
-  .footer-con h3 {
-    width: 95%;
-  }
+
   .text2 {
     padding: 10px 0;
   }
+
   .text3 {
     width: min(90%, 560px);
   }
+
   .text3 p {
-    width: min(100%, 560px);
+    width: 100%;
+  }
+
+  .container4 h3,
+  .container6 h3,
+  .footer-con h3 {
+    width: 95%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .devider {
+    width: 100%;
   }
 }
 
+/* Small Tablet */
 @media (max-width: 48rem) {
   .container6 h3 {
     text-align: left;
   }
 }
+
+/* Mobile Grid Fix */
 @media (max-width: 40.375rem) {
   .subscription-con {
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: center;
   }
 }
 
+/* Typography Switch */
 @media (max-width: 33.125rem) {
   :root {
-    /* Mobile presets */
     --text-1: var(--text-1-mobile);
     --text-2: var(--text-2-mobile);
     --text-3: var(--text-3-mobile);
     --text-6: var(--text-6-mobile);
   }
+
   h3 img.circle {
     height: 50px;
   }
 }
+
+/* Mobile */
 @media (max-width: 27.5rem) {
   .section1 {
     height: auto;
     min-height: clamp(700px, 110vh, 1100px);
   }
-  .review-btn {
-    padding: 0px;
-    gap: 1px;
-    font-size: 0.875rem;
-    height: 44px;
-  }
-  .footer .review-btn2 {
-    font-size: 0.9rem;
-  }
-  .number-item {
-    gap: 10px;
-  }
-  .subscription-item {
-    height: auto;
-  }
-  .text2 {
-    padding: 10px 0;
-  }
+
   .section2,
   .section3,
   .section4,
@@ -813,40 +808,27 @@ button:focus {
   .section6 {
     padding: 0 10px;
   }
+
+  .review-btn {
+    font-size: 0.875rem;
+    gap: 4px;
+  }
+
+  .footer .review-btn2 {
+    font-size: 0.9rem;
+  }
+
+  .number-item {
+    gap: 10px;
+  }
+
   .bottom2 {
     flex-direction: column;
     text-align: center;
     gap: 12px;
   }
-}
 
-/* ONLY showing changed parts — everything else stays EXACTLY as your file */
-
-/* ================= FIX 1: SECTION HEIGHT ================= */
-
-/* ================= FIX 2: HERO CONTAINER ================= */
-
-/* ================= FIX 3: HERO IMAGE ================= */
-
-/* ================= FIX 4: BUTTON ================= */
-
-/* ================= FIX 5: SECTION SPACING ================= */
-
-/* ================= FIX 6: CONTAINER WIDTH ================= */
-
-/* ================= FIX 7: NUMBER ITEMS ================= */
-
-/* ================= FIX 8: CARD ================= */
-
-/* ================= FIX 9: BUTTON IN CARD ================= */
-
-/* ================= FIX 10: CONTAINER6 ================= */
-
-/* ================= FIX 11: FOOTER BUTTON ================= */
-
-/* ================= FIX 12: MOBILE HEIGHT REMOVAL ================= */
-@media (max-width: 73.75rem) {
-}
-
-@media (max-width: 27.5rem) {
+  .text2 {
+    padding: 10px 0;
+  }
 }
