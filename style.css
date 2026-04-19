@@ -101,6 +101,14 @@ a {
   text-decoration: none;
   width: 100%;
 }
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  padding: clamp(32px, 8vw, 120px) 0;
+}
+
 .section1 {
   background: var(--bg-journey);
   background-size: var(--bg-journey-size);
@@ -108,10 +116,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 820px;
-  padding: 32px;
   gap: 80px;
   max-width: 1440px;
+  height: auto;
+  min-height: clamp(700px, 85vh, 820px);
 }
 .section1 .head-logo {
   text-align: left;
@@ -124,10 +132,12 @@ a {
 }
 .text-con1 {
   display: flex;
-  height: 606px;
   gap: 64px;
   justify-content: center;
+  height: auto;
+  min-height: clamp(500px, 60vh, 606px);
 }
+
 .text-con1 h1 {
   font: var(--text-1);
   letter-spacing: var(--ls-tight-lg);
@@ -154,7 +164,8 @@ a {
 }
 .hero {
   width: min(540px, 100%);
-  height: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
 }
 .hero img {
   width: 100%;
@@ -162,8 +173,7 @@ a {
   border-radius: 10px;
 }
 .review-btn {
-  width: min(380px, 96%);
-  height: 64px;
+  width: min(400px, 96%);
   /* padding: 5px; */
   display: flex;
   align-items: center;
@@ -175,7 +185,10 @@ a {
   color: var(--neutral-900);
   text-transform: uppercase;
   cursor: pointer;
+  height: auto;
+  min-height: clamp(48px, 6vw, 64px);
 }
+
 a:hover {
   cursor: pointer;
 }
@@ -210,7 +223,6 @@ button:focus {
 }
 
 .section2 {
-  padding: 120px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,7 +330,6 @@ button:focus {
   width: min(520px, 90%);
 }
 .section4 {
-  padding: 120px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,10 +337,11 @@ button:focus {
 .container4 {
   background: var(--bg-journey);
   background-size: var(--bg-journey-size);
-  width: 1170px;
-  height: 454px;
   border-radius: 5px;
   padding: 80px 60px 70px;
+  width: min(1170px, 100%);
+  height: auto;
+  min-height: clamp(300px, 50vh, 454px);
 }
 .container4 h3 {
   font: var(--text-2);
@@ -337,7 +349,7 @@ button:focus {
   color: var(--neutral-900);
   width: min(530px, 100%);
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -353,8 +365,9 @@ button:focus {
   flex-direction: column;
   gap: 30px;
   position: relative;
-  width: 256px;
+  width: min(256px, 100%);
 }
+
 .number-item span {
   font: var(--text-6);
   color: var(--neutral-900);
@@ -378,7 +391,6 @@ button:focus {
 }
 
 .section5 {
-  padding: 0 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,16 +415,18 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
+  justify-items: center;
   gap: 24px;
 }
 
 .subscription-item {
+  height: auto;
+  min-height: clamp(300px, 45vh, 358px);
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 24px;
   width: 280px;
-  height: 358px;
   border: 1px solid var(--neutral-200);
   transition: all 0.15s linear;
   border-radius: 8px;
@@ -457,13 +471,14 @@ button:focus {
 .subscription-item button {
   margin-top: 10px;
   width: 100%;
-  height: 63px;
   background: var(--light-salmon-50);
   border: 1px solid var(--neutral-900);
   border-radius: 6px;
   font: var(--text-6);
   color: var(--neutral-900);
   cursor: pointer;
+  height: auto;
+  min-height: clamp(48px, 6vw, 63px);
 }
 
 .subscription-item button:hover {
@@ -477,7 +492,6 @@ button:focus {
 }
 
 .section6 {
-  padding: 0 0 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,8 +501,8 @@ button:focus {
   justify-content: center;
   align-items: center;
   gap: 32px;
-  width: 970px;
   flex-direction: column;
+  width: min(970px, 100%);
 }
 
 .start-con {
@@ -552,10 +566,11 @@ button:focus {
   align-items: center;
   gap: 8px;
   width: min(380px, 90%);
-  height: 64px;
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
+  height: auto;
+  min-height: clamp(48px, 6vw, 64px);
 }
 .footer .review-btn2:hover {
   background: var(--btn-hover-bg);
@@ -651,9 +666,10 @@ button:focus {
 
 @media (max-width: 73.75rem) {
   .section1 {
-    height: 1360px;
     padding: 32px;
     width: 100%;
+    height: auto;
+    min-height: clamp(900px, 120vh, 1360px);
   }
   .img-con .tech-logos {
     right: 20px;
@@ -769,7 +785,8 @@ button:focus {
 }
 @media (max-width: 27.5rem) {
   .section1 {
-    height: 1100px;
+    height: auto;
+    min-height: clamp(700px, 110vh, 1100px);
   }
   .review-btn {
     padding: 0px;
@@ -801,4 +818,35 @@ button:focus {
     text-align: center;
     gap: 12px;
   }
+}
+
+/* ONLY showing changed parts — everything else stays EXACTLY as your file */
+
+/* ================= FIX 1: SECTION HEIGHT ================= */
+
+/* ================= FIX 2: HERO CONTAINER ================= */
+
+/* ================= FIX 3: HERO IMAGE ================= */
+
+/* ================= FIX 4: BUTTON ================= */
+
+/* ================= FIX 5: SECTION SPACING ================= */
+
+/* ================= FIX 6: CONTAINER WIDTH ================= */
+
+/* ================= FIX 7: NUMBER ITEMS ================= */
+
+/* ================= FIX 8: CARD ================= */
+
+/* ================= FIX 9: BUTTON IN CARD ================= */
+
+/* ================= FIX 10: CONTAINER6 ================= */
+
+/* ================= FIX 11: FOOTER BUTTON ================= */
+
+/* ================= FIX 12: MOBILE HEIGHT REMOVAL ================= */
+@media (max-width: 73.75rem) {
+}
+
+@media (max-width: 27.5rem) {
 }
