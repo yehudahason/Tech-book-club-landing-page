@@ -106,7 +106,7 @@ a {
 .section4,
 .section5,
 .section6 {
-  padding: clamp(32px, 8vw, 120px) 0;
+  padding: 120px 0 0;
 }
 
 .section1 {
