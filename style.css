@@ -98,6 +98,8 @@ main {
 }
 a {
   text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 .section1 {
   background: var(--bg-journey);
@@ -126,7 +128,7 @@ a {
   gap: 64px;
   justify-content: center;
 }
-.text-con1 h3 {
+.text-con1 h1 {
   font: var(--text-1);
   letter-spacing: var(--ls-tight-lg);
   background: var(--gradient-text);
@@ -301,11 +303,11 @@ button:focus {
   display: flex;
   align-items: center;
 }
-h3 span {
+.text3 span {
   position: relative;
   display: inline-block;
 }
-h3 img.circle {
+.text3 img.circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -451,10 +453,7 @@ h3 img.circle {
   letter-spacing: var(--ls-tight-sm);
   color: var(--neutral-700);
 }
-a {
-  text-decoration: none;
-  width: 100%;
-}
+
 .subscription-item button {
   margin-top: 10px;
   width: 100%;
